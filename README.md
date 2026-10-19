@@ -86,22 +86,13 @@ shopkeeper-1002/
 
 ## 运行步骤
 
-### 环境要求
+### 1.环境要求
 
 | 依赖 | 要求 |
 | --- | --- |
 | Python | >= 3.10 |
-| 内存 | >= 16GB（建议 32GB） |
-| 显存 | >= 8GB（BGE-M3 + Reranker 推理） |
-| 存储 | >= 50GB（模型缓存） |
 | 外部服务 | Milvus（向量库）、MongoDB（历史）、MinIO（对象存储） |
 
-### 1. 克隆项目
-
-```bash
-git clone <你的仓库地址>
-cd shopkeeper-1002
-```
 
 ### 2. 创建虚拟环境并安装依赖
 
@@ -179,7 +170,7 @@ python -m knowledge.api.query_api
 POST /upload
 Content-Type: multipart/form-data
 
-file: <万用表使用手册.pdf>
+file: <xx商品使用手册.pdf>
 ```
 
 ```json
@@ -218,7 +209,7 @@ Content-Type: application/json
 
 ```json
 {
-  "query": "万用表如何测量直流电压？",
+  "query": "xx商品如何测量直流电压？",
   "session_id": "sess_001",
   "is_stream": false
 }
