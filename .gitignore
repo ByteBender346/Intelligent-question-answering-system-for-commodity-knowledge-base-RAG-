@@ -1,0 +1,11 @@
+# IDE
+.idea/
+# Python缓存
+__pycache__/
+*.pyc
+# 虚拟环境
+knowledge/.venv/
+# 密钥文件
+knowledge/.env
+# 临时向量数据
+knowledge/temp_data/
