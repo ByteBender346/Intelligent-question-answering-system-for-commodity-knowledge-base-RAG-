@@ -1,0 +1,11 @@
+minio
+langchain-openai
+langgraph
+grandalf
+pymilvus[model]
+pymilvus
+sentence-transformers
+pymongo
+openai-agents
+mcp>=2.2.0,<3
+mineru[all]
